@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Milk Quality Testing Kit — Case Study | SRIRANGAN V</title>
+  <meta name="description" content="Technical case study of Smart Milk Quality Testing Kit, an embedded IoT-based quality assessment solution associated with a published patent.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="pageIn">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="../index.html" style="display:flex; align-items:center; gap:10px;"><img src="../images/java_cup_logo.png" alt="Java Logo" class="brand-logo" style="width:42px; height:42px; object-fit:contain;">SRIRANGAN<span>.</span></a>
+      <div class="links">
+        <a href="../sections/about.html">About</a>
+        <a href="../sections/skills.html">Skills</a>
+        <a class="active" href="../sections/projects.html">Projects</a>
+        <a href="../sections/experience.html">Experience</a>
+        <a href="../sections/leadership.html">Leadership</a>
+      </div>
+      <a class="btn primary" href="../sections/contact.html">Connect</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap caseHero reveal">
+      <a class="backlink" href="../index.html#projects">← Back to portfolio</a>
+      <div class="headerBand" style="margin-top:22px">
+        <div class="eyebrow">Project 04 · Case Study</div>
+        <h1>Smart Milk Quality Testing Kit</h1>
+        <p class="lead">Sensor-Based Embedded Quality Assessment Solution</p>
+        <div class="metaRow">
+          <span><b>Role:</b> Inventor</span>
+          <span><b>Year:</b> 2025</span>
+        </div>
+        <div class="chips">
+          <span class="chip">Arduino</span>
+          <span class="chip">Embedded C</span>
+          <span class="chip">IoT Concepts</span>
+          <span class="chip">Sensors</span>
+          <span class="chip">Patent</span>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:20px;">
+          <a class="btn primary pending-action" href="#" data-asset="Patent Details PDF">View Patent PDF</a>
+          <a class="btn primary" href="../sections/contact.html">Contact / Resume</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap caseLayout">
+        <!-- Sidebar Navigation -->
+        <aside class="panel toc reveal">
+          <b>On this page</b>
+          <a href="#overview">Overview</a>
+          <a href="#role">My Contribution</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#features">Key Features</a>
+          <a href="#visuals">Visuals</a>
+          <a href="#results">Results</a>
+          <a href="#learned">What I Learned</a>
+          </aside>
+
+        <!-- Main Content -->
+        <div class="caseContent">
+          <!-- Overview -->
+          <div id="overview" class="panel reveal">
+            <div class="eyebrow">01 · Overview</div>
+            <h2>Problem Statement</h2>
+            <p class="muted">Milk quality and adulteration checks cannot always be accurately represented by a single measurement or visual check. Heterogeneous physical and chemical parameters must be combined to evaluate quality profiles effectively.</p>
+            
+            <h3 style="margin-top:20px;">Project Purpose</h3>
+            <p class="muted">This project is an embedded multi-sensor system designed to check milk parameters in real-time. By monitoring acidity, temperature, density, suspended solids, and gas output, the kit provides an immediate classification of quality, serving as a low-cost, portable alternative to slow lab tests.</p>
+          </div>
+
+          <!-- My Role -->
+          <div id="role" class="panel reveal">
+            <div class="eyebrow">02 · My Contribution</div>
+            <h2>Role & Contribution</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Integrated heterogeneous analog and digital sensor inputs with central microcontroller boards.</li>
+              <li>Wrote microcontroller processing and calibration logic in Embedded C using Arduino IDE.</li>
+              <li>Designed threshold comparison loops to map multi-sensor inputs to immediate quality grades.</li>
+              <li>Tested LCD outputs and LED status patterns showing normal, warning, or adulterated states.</li>
+              <li>Contributed to project research associated with the published patent application.</li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div id="stack" class="panel reveal">
+            <div class="eyebrow">03 · Tech Stack</div>
+            <h2>Technology</h2>
+            <div class="chips" style="margin-top:10px;">
+              <span class="chip">Arduino (ATmega328P)</span>
+              <span class="chip">Embedded C</span>
+              <span class="chip">Proteus Circuit Design</span>
+              <span class="chip">Sensors Interfacing</span>
+              <span class="chip">LCD/LED Interfaces</span>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div id="architecture" class="panel reveal">
+            <div class="eyebrow">04 · Sensor Block Architecture</div>
+            <h2>Physical System Flow</h2>
+            <div class="flow" style="margin-top:15px; margin-bottom:15px;">
+              <span>Milk Sample</span><b>→</b>
+              <span>pH / Temp / TDS / Gas / Turbidity Sensors</span><b>→</b>
+              <span>Arduino Processing Unit</span><b>→</b>
+              <span>Decision Logic (Embedded C)</span><b>→</b>
+              <span>LCD Output & LED Indicators</span>
+            </div>
+            
+            <div class="card s12" style="padding: 15px; background:rgba(37,99,235,.02); font-size:12.5px;">
+              <strong>Sensors Implemented:</strong>
+              <ul style="margin:5px 0 0 15px; padding:0; line-height:1.6; color:var(--muted)">
+                <li><strong>pH Sensor:</strong> Monitors acidity/alkalinity changes (sourness or chemical addition).</li>
+                <li><strong>Temperature Sensor:</strong> Tracks storage context relevant to bacterial growth.</li>
+                <li><strong>TDS Sensor:</strong> Measures total dissolved solids to identify milk density/water dilution.</li>
+                <li><strong>Gas Sensor:</strong> Identifies ammonia/methane emissions indicating microbial souring.</li>
+                <li><strong>Turbidity Sensor:</strong> Measures light transmission to observe optical density and solids.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div id="features" class="panel reveal">
+            <div class="eyebrow">05 · Key Features</div>
+            <h2>Core Capabilities</h2>
+            <div class="featureGrid" style="margin-top:15px;">
+              <div class="feature">
+                <h3>Multi-Sensor Inputs</h3>
+                <p class="muted" style="font-size:12.5px;">Monitors five separate chemical/physical dimensions simultaneously in one container.</p>
+              </div>
+              <div class="feature">
+                <h3>Microcontroller Logic</h3>
+                <p class="muted" style="font-size:12.5px;">Processes analog sensor signals, compiles averages, and applies filter logic to reject noise.</p>
+              </div>
+              <div class="feature">
+                <h3>Status Classification</h3>
+                <p class="muted" style="font-size:12.5px;">Compares sensor thresholds to classify samples into normal, stale, or adulterated grades.</p>
+              </div>
+              <div class="feature">
+                <h3>Immediate Feedback</h3>
+                <p class="muted" style="font-size:12.5px;">Displays raw sensor values on a 16x2 LCD, flashing distinct indicator LEDs for warnings.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Highlights -->
+          
+
+          <!-- Challenges -->
+          
+
+          <!-- Visuals (Polished Placeholders) -->
+          <div id="visuals" class="panel reveal">
+            <div class="eyebrow">08 · Screenshots / Visuals</div>
+            <h2>Evidence Gallery</h2>
+            <div class="evidenceGrid" style="margin-top:15px;">
+              <!-- Sensor Probes & Arduino Circuit -->
+              <div class="evidence" style="padding:0; overflow:hidden; background:#fff; display:grid; grid-template-rows:1fr auto; border:1px solid var(--line); border-radius:20px; box-shadow:0 8px 24px rgba(0,0,0,0.02); min-height:190px;">
+                <div style="background:#f8fafc; height:120px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                  <img src="../images/milk_kit_3.jpg" alt="Bare Circuit Sensor Setup" style="width:100%; height:100%; object-fit:cover; cursor:pointer;" onclick="window.open('../images/milk_kit_3.jpg')">
+                </div>
+                <div style="padding:10px 15px; text-align:left; border-top:1px solid var(--line);">
+                  <b style="font-size:13px; color:var(--ink);">Sensor Probes & Arduino Circuit</b>
+                  <p class="muted" style="font-size:11.5px; margin:4px 0 0; line-height:1.4;">Bare circuit prototype showing Arduino controller and sensor probes immersed in milk test sample.</p>
+                </div>
+              </div>
+
+              <!-- LCD Parameter Display -->
+              <div class="evidence" style="padding:0; overflow:hidden; background:#fff; display:grid; grid-template-rows:1fr auto; border:1px solid var(--line); border-radius:20px; box-shadow:0 8px 24px rgba(0,0,0,0.02); min-height:190px;">
+                <div style="background:#f8fafc; height:120px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                  <img src="../images/milk_kit_1.jpg" alt="LCD Parameter Display" style="width:100%; height:100%; object-fit:cover; cursor:pointer;" onclick="window.open('../images/milk_kit_1.jpg')">
+                </div>
+                <div style="padding:10px 15px; text-align:left; border-top:1px solid var(--line);">
+                  <b style="font-size:13px; color:var(--ink);">LCD Parameter Display</b>
+                  <p class="muted" style="font-size:11.5px; margin:4px 0 0; line-height:1.4;">16x2 LCD screen showing real-time TDS (Total Dissolved Solids), Gas, and Temperature output values.</p>
+                </div>
+              </div>
+
+              <!-- Completed Handheld Prototype -->
+              <div class="evidence" style="padding:0; overflow:hidden; background:#fff; display:grid; grid-template-rows:1fr auto; border:1px solid var(--line); border-radius:20px; box-shadow:0 8px 24px rgba(0,0,0,0.02); min-height:190px;">
+                <div style="background:#f8fafc; height:120px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                  <img src="../images/milk_kit_2.jpg" alt="Completed Prototype" style="width:100%; height:100%; object-fit:cover; cursor:pointer;" onclick="window.open('../images/milk_kit_2.jpg')">
+                </div>
+                <div style="padding:10px 15px; text-align:left; border-top:1px solid var(--line);">
+                  <b style="font-size:13px; color:var(--ink);">Completed Handheld Prototype</b>
+                  <p class="muted" style="font-size:11.5px; margin:4px 0 0; line-height:1.4;">Fabricated handheld enclosure case housing the internal circuitry, sensor probes, and power connector.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div id="results" class="panel reveal">
+            <div class="eyebrow">09 · Results & Impact</div>
+            <h2>Factual Outcomes</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Successfully constructed a working multi-sensor IoT concept device validating chemical parameters.</li>
+              <li>Successfully published utility patent application <strong>202541090122 A</strong> in the official Patent Journal.</li>
+              <li>Demonstrates strong interdisciplinary capability, bridging hardware programming with problem-solving.</li>
+            </ul>
+          </div>
+
+          <!-- What I Learned -->
+          <div id="learned" class="panel reveal">
+            <div class="eyebrow">10 · What I Learned</div>
+            <h2>Key Takeaways</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Interfacing analog sensors and configuring internal ADC conversion scales.</li>
+              <li>Wrote structured code in Embedded C managing display refresh rates without using blocking delay statements.</li>
+              <li>Documented technical specifications and claims for patent application preparation.</li>
+            </ul>
+          </div>
+
+          <!-- Future -->
+          
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="crud-app.html">← CRUD Web Application</a>
+            <a href="../sections/projects.html">All Projects</a>
+            <a href="k-band-antenna.html">Planar Monopole Antenna for K-Band →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <b>SRIRANGAN V</b>
+      <p class="muted">Java Full Stack Developer · Software, engineering, innovation and continuous learning.</p>
+    </div>
+  </footer>
+  <script src="../app.js"></script>
+</body>
+</html>

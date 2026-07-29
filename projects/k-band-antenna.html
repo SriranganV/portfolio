@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Planar Monopole Antenna for K-Band — Case Study | SRIRANGAN V</title>
+  <meta name="description" content="Technical case study of Planar Monopole Antenna for K-Band Communication designed and optimized using CST Studio Suite.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="pageIn">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="../index.html" style="display:flex; align-items:center; gap:10px;"><img src="../images/java_cup_logo.png" alt="Java Logo" class="brand-logo" style="width:42px; height:42px; object-fit:contain;">SRIRANGAN<span>.</span></a>
+      <div class="links">
+        <a href="../sections/about.html">About</a>
+        <a href="../sections/skills.html">Skills</a>
+        <a class="active" href="../sections/projects.html">Projects</a>
+        <a href="../sections/experience.html">Experience</a>
+        <a href="../sections/leadership.html">Leadership</a>
+      </div>
+      <a class="btn primary" href="../sections/contact.html">Connect</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap caseHero reveal">
+      <a class="backlink" href="../index.html#projects">← Back to portfolio</a>
+      <div class="headerBand" style="margin-top:22px">
+        <div class="eyebrow">Project 05 · Case Study</div>
+        <h1>Planar Monopole Antenna for K-Band</h1>
+        <p class="lead">Compact RF & Microwave Simulation Study</p>
+        <div class="metaRow">
+          <span><b>Role:</b> Antenna Design & Simulation</span>
+          <span><b>Year:</b> 2026</span>
+        </div>
+        <div class="chips">
+          <span class="chip">CST Studio Suite</span>
+          <span class="chip">RF Engineering</span>
+          <span class="chip">Antenna Design</span>
+          <span class="chip">Electromagnetic Simulation</span>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:20px;">
+          <a class="btn primary pending-action" href="#" data-asset="Antenna Research Poster">View Research Poster</a>
+          <a class="btn primary" href="../sections/contact.html">Contact / Resume</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap caseLayout">
+        <!-- Sidebar Navigation -->
+        <aside class="panel toc reveal">
+          <b>On this page</b>
+          <a href="#overview">Overview</a>
+          <a href="#role">My Contribution</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#features">Key Features</a>
+          <a href="#visuals">Visuals</a>
+          <a href="#results">Results</a>
+          <a href="#learned">What I Learned</a>
+          </aside>
+
+        <!-- Main Content -->
+        <div class="caseContent">
+          <!-- Overview -->
+          <div id="overview" class="panel reveal">
+            <div class="eyebrow">01 · Overview</div>
+            <h2>Problem Statement</h2>
+            <p class="muted">High-frequency communication systems (like 5G and satellite radars) require small, planar antennas that can operate in high gigahertz frequency bands while maintaining high return loss, low VSWR, and acceptable gains.</p>
+            
+            <h3 style="margin-top:20px;">Project Purpose</h3>
+            <p class="muted">This research project presents the design, parametric sweep, and optimization of a compact planar monopole antenna operating in the K-Band. Using CST Studio Suite, the geometry is iteratively tuned to achieve a resonance point at approximately 23.6 GHz with a return loss S11 of below -10 dB.</p>
+          </div>
+
+          <!-- My Role -->
+          <div id="role" class="panel reveal">
+            <div class="eyebrow">02 · My Contribution</div>
+            <h2>Role & Contribution</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Designed the primary patch geometry, microstrip feed line, and partial ground plane.</li>
+              <li>Set up simulation boundaries, ports, and mesh properties in CST Studio Suite.</li>
+              <li>Conducted parametric sweeps on slot dimensions and ground feed gaps to tune return loss.</li>
+              <li>Analyzed simulated S11, VSWR plots, far-field 3D radiation patterns, and surface currents.</li>
+              <li>Documented research findings and compiled a technical research poster.</li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div id="stack" class="panel reveal">
+            <div class="eyebrow">03 · Tech Stack</div>
+            <h2>Technology</h2>
+            <div class="chips" style="margin-top:10px;">
+              <span class="chip">CST Studio Suite</span>
+              <span class="chip">RF / Antenna Engineering</span>
+              <span class="chip">Electromagnetic Simulation</span>
+              <span class="chip">Impedance Matching</span>
+              <span class="chip">FR-4 Substrate Properties</span>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div id="architecture" class="panel reveal">
+            <div class="eyebrow">04 · System Design Flow</div>
+            <h2>Iterative Simulation Cycle</h2>
+            <div class="flow" style="margin-top:15px;">
+              <span>Target Frequency (K-Band)</span><b>→</b>
+              <span>Base Geometry Calculation</span><b>→</b>
+              <span>CST Modeling & Mesh Setup</span><b>→</b>
+              <span>Solver Executions</span><b>→</b>
+              <span>S11 / VSWR Analysis</span><b>→</b>
+              <span>Parametric Sweeping</span><b>→</b>
+              <span>Optimal Geometry Results</span>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div id="features" class="panel reveal">
+            <div class="eyebrow">05 · Design Configuration</div>
+            <h2>Core Specifications</h2>
+            <div class="featureGrid" style="margin-top:15px;">
+              <div class="feature">
+                <h3>Compact Dimensions</h3>
+                <p class="muted" style="font-size:12.5px;">Footprint of only 20 × 20 mm² with a 1.6 mm substrate thickness, suitable for compact packages.</p>
+              </div>
+              <div class="feature">
+                <h3>Main Resonance</h3>
+                <p class="muted" style="font-size:12.5px;">Resonates at approximately 23.6 GHz, operating effectively inside high-frequency communications bands.</p>
+              </div>
+              <div class="feature">
+                <h3>High Gain</h3>
+                <p class="muted" style="font-size:12.5px;">Achieved a maximum simulated gain of 7.27 dBi in the main radiation direction.</p>
+              </div>
+              <div class="feature">
+                <h3>Low VSWR</h3>
+                <p class="muted" style="font-size:12.5px;">Voltage Standing Wave Ratio (VSWR) below 2, indicating clean impedance matching with 50Ω feeds.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Highlights -->
+          
+
+          <!-- Challenges -->
+          
+
+          <!-- Visuals (Polished Placeholders) -->
+          <div id="visuals" class="panel reveal">
+            <div class="eyebrow">08 · Screenshots / Visuals</div>
+            <h2>Simulation Evidence</h2>
+            <div class="evidenceGrid" style="margin-top:15px;">
+              <div class="evidence pending" style="cursor:pointer;" data-asset="Antenna Geometry Setup">
+                <b>Antenna Geometry Model</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">3D CAD layout showing patch, feed line, and partial ground.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence pending" style="cursor:pointer;" data-asset="Antenna S11 S-Parameter Plot">
+                <b>S11 S-Parameter Plot</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">Simulated return loss showing resonance dip at 23.6 GHz.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence pending" style="cursor:pointer;" data-asset="Antenna VSWR Plot">
+                <b>VSWR Characteristic Plot</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">VSWR value curve showing matching ratio below 2.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence pending" style="cursor:pointer;" data-asset="Antenna 3D Radiation Pattern">
+                <b>3D Farfield Radiation Pattern</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">Gain lobes and radiation directions at 23.6 GHz.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence pending" style="cursor:pointer;" data-asset="Antenna Surface Currents">
+                <b>Surface Current Distribution</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">Current density plots highlighting resonance hot spots.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence" style="padding:0; overflow:hidden; background:#fff; display:grid; grid-template-rows:1fr auto; border:1px solid var(--line); border-radius:20px; box-shadow:0 8px 24px rgba(0,0,0,0.02); min-height:190px;">
+                <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:6px; padding:6px; background:#f8fafc; height:120px; overflow:hidden;">
+                  <img src="../images/k_band_antenna_3.jpg" alt="Fabricated Prototype Model Top View" style="width:100%; height:100%; object-fit:cover; border-radius:12px; cursor:pointer;" onclick="window.open('../images/k_band_antenna_3.jpg')">
+                  <img src="../images/k_band_antenna_1.jpg" alt="Fabricated Prototype Model Angled View" style="width:100%; height:100%; object-fit:cover; border-radius:12px; cursor:pointer;" onclick="window.open('../images/k_band_antenna_1.jpg')">
+                </div>
+                <div style="padding:10px 15px; text-align:left; border-top:1px solid var(--line);">
+                  <b style="font-size:13px; color:var(--ink);">Fabricated Prototype Model</b>
+                  <p class="muted" style="font-size:11.5px; margin:4px 0 0; line-height:1.4;">Real-world microstrip patch prototype showing SMA feed connector pinout.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div id="results" class="panel reveal">
+            <div class="eyebrow">09 · Results & Impact</div>
+            <h2>Factual Outcomes</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Designed and simulated a highly compact 20 × 20 mm² operating unit.</li>
+              <li>Attained maximum simulated directional gain of 7.27 dBi.</li>
+              <li>Successfully maintained consistent parameters in technical documentation.</li>
+              <li>Differentiates my fresher profile by showing deep mathematical, analytical, and electromagnetics research capabilities.</li>
+            </ul>
+          </div>
+
+          <!-- What I Learned -->
+          <div id="learned" class="panel reveal">
+            <div class="eyebrow">10 · What I Learned</div>
+            <h2>Key Takeaways</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>CST solver configurations and boundary/ports setup logic.</li>
+              <li>Interpreting reflection coefficients (S11) and VSWR matching curves.</li>
+              <li>Analyzing surface current vectors to understand high-frequency field effects.</li>
+            </ul>
+          </div>
+
+          <!-- Future -->
+          
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="smart-milk-kit.html">← Smart Milk Quality Testing Kit</a>
+            <a href="../sections/projects.html">All Projects</a>
+            <a href="play26.html">PLAY26 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <b>SRIRANGAN V</b>
+      <p class="muted">Java Full Stack Developer · Software, engineering, innovation and continuous learning.</p>
+    </div>
+  </footer>
+  <script src="../app.js"></script>
+</body>
+</html>

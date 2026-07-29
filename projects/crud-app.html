@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CRUD Web Application — Case Study | SRIRANGAN V</title>
+  <meta name="description" content="Technical case study of CRUD Web Application, a database-driven Java web application built with Servlets, JSP, JDBC, and MySQL.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="pageIn">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="../index.html" style="display:flex; align-items:center; gap:10px;"><img src="../images/java_cup_logo.png" alt="Java Logo" class="brand-logo" style="width:42px; height:42px; object-fit:contain;">SRIRANGAN<span>.</span></a>
+      <div class="links">
+        <a href="../sections/about.html">About</a>
+        <a href="../sections/skills.html">Skills</a>
+        <a class="active" href="../sections/projects.html">Projects</a>
+        <a href="../sections/experience.html">Experience</a>
+        <a href="../sections/leadership.html">Leadership</a>
+      </div>
+      <a class="btn primary" href="../sections/contact.html">Connect</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap caseHero reveal">
+      <a class="backlink" href="../index.html#projects">← Back to portfolio</a>
+      <div class="headerBand" style="margin-top:22px">
+        <div class="eyebrow">Project 03 · Case Study</div>
+        <h1>CRUD Web Application</h1>
+        <p class="lead">Database-Driven Java Web Application</p>
+        <div class="metaRow">
+          <span><b>Role:</b> Developer</span>
+          <span><b>Year:</b> 2025</span>
+        </div>
+        <div class="chips">
+          <span class="chip">Java</span>
+          <span class="chip">Servlets</span>
+          <span class="chip">JSP</span>
+          <span class="chip">JSTL</span>
+          <span class="chip">JDBC</span>
+          <span class="chip">MySQL</span>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:20px;">
+          <a class="btn" href="https://github.com/SriranganV" target="_blank">View Code</a>
+          <a class="btn primary" href="../sections/contact.html">Contact / Resume</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap caseLayout">
+        <!-- Sidebar Navigation -->
+        <aside class="panel toc reveal">
+          <b>On this page</b>
+          <a href="#overview">Overview</a>
+          <a href="#role">My Contribution</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#features">Key Features</a>
+          <a href="#visuals">Visuals</a>
+          <a href="#results">Results</a>
+          <a href="#learned">What I Learned</a>
+          </aside>
+
+        <!-- Main Content -->
+        <div class="caseContent">
+          <!-- Overview -->
+          <div id="overview" class="panel reveal">
+            <div class="eyebrow">01 · Overview</div>
+            <h2>Problem Statement</h2>
+            <p class="muted">Most business tools rely on persistent data. Implementing form validation, connection routing, transaction processing, and query returns requires solid understanding of underlying Java database APIs.</p>
+            
+            <h3 style="margin-top:20px;">Project Purpose</h3>
+            <p class="muted">The CRUD Web Application is a Java web tool built to practice full database-driven lifecycle flows. Instead of using high-level ORMs, it uses raw JDBC statements to interact with MySQL, helping me understand exactly how Java communicates with relational databases behind the scenes.</p>
+          </div>
+
+          <!-- My Role -->
+          <div id="role" class="panel reveal">
+            <div class="eyebrow">02 · My Contribution</div>
+            <h2>Role & Contribution</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Built complete server-side database workflows (Create, Read, Update, Delete queries).</li>
+              <li>Connected Java to MySQL using direct JDBC Connection, Statement, and PreparedStatement blocks.</li>
+              <li>Processed HTML form entries using HttpServletRequest and HttpServletResponse in Servlets.</li>
+              <li>Displayed relational table records inside dynamic JSP views using JSTL loops.</li>
+              <li>Managed session states and page-to-page servlet forwardings.</li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div id="stack" class="panel reveal">
+            <div class="eyebrow">03 · Tech Stack</div>
+            <h2>Technology</h2>
+            <div class="chips" style="margin-top:10px;">
+              <span class="chip">Java (JDK)</span>
+              <span class="chip">Servlets API</span>
+              <span class="chip">JSP & JSTL</span>
+              <span class="chip">JDBC Driver</span>
+              <span class="chip">MySQL / SQL</span>
+              <span class="chip">Maven</span>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div id="architecture" class="panel reveal">
+            <div class="eyebrow">04 · System Architecture</div>
+            <h2>Data Flow Loop</h2>
+            <div class="flow" style="margin-top:15px;">
+              <span>Form Submit</span><b>→</b>
+              <span>Servlet Controller</span><b>→</b>
+              <span>JDBC Connection</span><b>→</b>
+              <span>MySQL execution</span><b>→</b>
+              <span>ResultSet Return</span><b>→</b>
+              <span>JSP View / JSTL loop</span><b>→</b>
+              <span>HTML Page Out</span>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div id="features" class="panel reveal">
+            <div class="eyebrow">05 · Key Features</div>
+            <h2>Core Capabilities</h2>
+            <div class="featureGrid" style="margin-top:15px;">
+              <div class="feature">
+                <h3>Create</h3>
+                <p class="muted" style="font-size:12.5px;">Form submits capture inputs and trigger SQL INSERT prepared queries to create records.</p>
+              </div>
+              <div class="feature">
+                <h3>Read</h3>
+                <p class="muted" style="font-size:12.5px;">Triggers SQL SELECT queries, loops over ResultSets, and compiles object collections for views.</p>
+              </div>
+              <div class="feature">
+                <h3>Update</h3>
+                <p class="muted" style="font-size:12.5px;">Retrieves record details by primary ID, pre-fills HTML form inputs, and runs SQL UPDATE statements.</p>
+              </div>
+              <div class="feature">
+                <h3>Delete</h3>
+                <p class="muted" style="font-size:12.5px;">Allows users to remove specific entries safely via ID-mapped controller endpoints running DELETE operations.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Highlights -->
+          
+
+          <!-- Challenges -->
+          
+
+          <!-- Visuals (Polished Placeholders) -->
+          <div id="visuals" class="panel reveal">
+            <div class="eyebrow">08 · Screenshots / Visuals</div>
+            <h2>Evidence Gallery</h2>
+            <div class="evidenceGrid" style="margin-top:15px;">
+              <div class="evidence pending" style="cursor:pointer;" data-asset="CRUD Form Input">
+                <b>Form Creation Input</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">HTML input layout with basic validation checks.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence pending" style="cursor:pointer;" data-asset="CRUD Records Table">
+                <b>Records Table</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">JSTL rendered table showing database records.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+              <div class="evidence pending" style="cursor:pointer;" data-asset="CRUD Database Rows">
+                <b>Database rows check</b>
+                <p class="muted" style="font-size:12px; margin-top:5px;">MySQL database schema rows check.</p>
+                <span class="pending-status">Project visual pending</span>
+                <!-- TODO: Replace with verified real project image -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div id="results" class="panel reveal">
+            <div class="eyebrow">09 · Results & Impact</div>
+            <h2>Factual Outcomes</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Successfully linked a Java backend runtime to persistent MySQL schemas without ORM abstractions.</li>
+              <li>Configured proper resource closing behaviors (try-with-resources) to prevent memory/connection leaks.</li>
+              <li>Provides solid foundational backing for discussing database connectivity in technical discussions.</li>
+            </ul>
+          </div>
+
+          <!-- What I Learned -->
+          <div id="learned" class="panel reveal">
+            <div class="eyebrow">10 · What I Learned</div>
+            <h2>Key Takeaways</h2>
+            <ul style="margin-top:10px; padding-left:18px; color:var(--muted); line-height:1.7;">
+              <li>Direct JDBC drivers configurations and URL connection mappings.</li>
+              <li>Separation of dynamic data binding loops using JSTL tags (<code>c:out</code>, <code>c:forEach</code>).</li>
+              <li>Managing transactional scopes and committing changes inside database runtimes.</li>
+            </ul>
+          </div>
+
+          <!-- Future -->
+          
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="railway-reservation.html">← Railway Reservation System</a>
+            <a href="../sections/projects.html">All Projects</a>
+            <a href="smart-milk-kit.html">Smart Milk Quality Testing Kit →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <b>SRIRANGAN V</b>
+      <p class="muted">Java Full Stack Developer · Software, engineering, innovation and continuous learning.</p>
+    </div>
+  </footer>
+  <script src="../app.js"></script>
+</body>
+</html>
